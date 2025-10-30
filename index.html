@@ -1,0 +1,87 @@
+<!doctype html>
+
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Интегралы</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="outer"><canvas width="800" height="400"></canvas></div>
+
+  <div class="outer"><style>
+    #id_top, #id_bottom {
+        width: 70px;
+        height: 32px;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    #id_top {
+        margin-bottom: 12px;
+    }
+
+    #id_bottom {
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+
+    #id_X {
+        width: 24px;
+        height: 24px;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    #id_function {
+        height: 32px;
+        font-size: 16px;
+        text-align: center;
+        vertical-align: center;
+        margin-left: 8px;
+        width: 304px;
+    }
+    #id_integral_symbol {
+        font-size: 42px;
+    }
+    @media screen and (max-width: 600px) {
+        #id_function {
+            width: 50vw;
+        }
+        #id_X {
+            width: 7vw;
+        }
+        #id_integral_symbol {
+            font-size: 9vw;
+        }
+    }
+
+</style>
+
+  <div class="kr-form">
+    <div>
+      <input type="number" name="top" value="1" placeholder="+oo" autocapitalize="off" autocorrect="off" id="id_top">
+    </div>
+    <div>
+      <div class="nowrap_line"><span id="id_integral_symbol">∫</span>
+        <input type="text" name="id_function" id="f" placeholder="" autocapitalize="off" autocorrect="off" maxlength="2048"><b>
+          dx</b>
+        </div></div><div style="clear: both;">
+          <input type="number" name="bottom" value="0" placeholder="-oo" autocapitalize="off" autocorrect="off" id="id_bottom"></div>
+          <div class="btn-up"><input type="submit" value="Найти интеграл" onclick="calculate()" value="Найти интеграл!"></div></div></div>
+
+          <div class="outer"><div class="kr-form">
+            <input id="res" type="number" placeholder="resolution = 10">
+          <input id="startX" type="number" placeholder="start x = 0">
+          <input id="startY" type="number" placeholder="start y = 0">
+          <input id="zoom" type="number" placeholder="zoom = 100">
+          </div></div>
+
+  
+  <script src="main.js"></script>
+</body>
+</html>

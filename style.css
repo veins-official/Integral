@@ -1,0 +1,63 @@
+canvas {
+    margin: 20px;
+    width: 90%;
+    border-radius: 10px;
+    border: solid black 3px;
+}
+.outer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+* {
+    box-sizing:border-box;
+  }
+
+  input {
+    resize: vertical;
+    padding:15px;
+    border-radius:15px;
+    border:0;
+    box-shadow:4px 4px 10px rgba(0,0,0,0.06);
+    margin: 10px;
+  }
+
+
+#id_integral_symbol {
+    font-size: 42px;
+}
+.kr-content {
+    width: 640px;
+    text-align: left;
+    padding: 0 11px 0 20px;
+    vertical-align: top;
+    font-size: 12px;
+    color: #333333;
+    line-height: 21px;
+    display: table-cell;
+}
+
+.kr-form {
+    background: none;
+    border: 1px solid gray;
+    text-align: left;
+    margin: 4px;
+    width: 400px;
+    padding: 10px;
+    display: table-cell;
+    border-radius: 6px;
+}
+
+
+body {
+    font-family: Verdana, Tahoma, sans-serif;
+    height: 100%;
+    font-size: 11px;
+    background-color: #fafafa;
+}
